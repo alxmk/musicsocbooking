@@ -1,0 +1,18 @@
+<tr>
+	<td class="email">
+		<%= link_to user.email, "mailto:#{user.email}" %>
+	</td>
+	<td class="confirmed">
+		<%= user.confirmed? %>
+	</td>
+	<td class="admin">
+		<%= user.admin? %>
+	</td>
+	<td class="options">
+		<% if user.confirmed? %>
+			<%= link_to "Unconfirm User", "#" %>
+		<% else %>
+			<%= link_to "Confirm User", "#" %>
+		<% end %>
+	</td>
+</tr>

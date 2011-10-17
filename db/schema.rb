@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111017094221) do
+ActiveRecord::Schema.define(:version => 20111017101521) do
 
   create_table "users", :force => true do |t|
-    t.string   "email",                              :default => "", :null => false
-    t.string   "encrypted_password",  :limit => 128, :default => "", :null => false
+    t.string   "email",                              :default => "",    :null => false
+    t.string   "encrypted_password",  :limit => 128, :default => "",    :null => false
     t.datetime "remember_created_at"
     t.integer  "sign_in_count",                      :default => 0
     t.datetime "current_sign_in_at"
@@ -24,8 +24,11 @@ ActiveRecord::Schema.define(:version => 20111017094221) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "confirmed",                          :default => false
+    t.boolean  "admin",                              :default => false
   end
 
+  add_index "users", ["confirmed"], :name => "index_users_on_confirmed"
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

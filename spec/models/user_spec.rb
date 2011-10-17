@@ -4,6 +4,7 @@ describe User do
   pending "add some examples to (or delete) #{__FILE__}"
 end
 
+
 # == Schema Information
 #
 # Table name: users
@@ -19,5 +20,7 @@ end
 #  last_sign_in_ip     :string(255)
 #  created_at          :datetime
 #  updated_at          :datetime
+#  confirmed           :boolean         default(FALSE)
+#  admin               :boolean         default(FALSE)
 #
 

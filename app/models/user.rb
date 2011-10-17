@@ -7,7 +7,10 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+  
+  default_scope :order => 'users.email ASC'
 end
+
 
 # == Schema Information
 #
@@ -24,5 +27,7 @@ end
 #  last_sign_in_ip     :string(255)
 #  created_at          :datetime
 #  updated_at          :datetime
+#  confirmed           :boolean         default(FALSE)
+#  admin               :boolean         default(FALSE)
 #
 
