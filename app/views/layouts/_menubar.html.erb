@@ -1,0 +1,15 @@
+<nav>
+	<ul class="menu">
+		<li class="firstlink">
+			<%= link_to "Home", root_path %>
+		</li>
+		<li><%= link_to "Booking Form", "#" %></li>
+		<li class="lastlink">
+			<% if current_user %>
+				<%= link_to "Sign Out"%>
+			<% else %>
+				<%= link_to "Sign In" %>
+			<% end %>
+		</li>
+	</ul>
+</nav>
