@@ -6,6 +6,8 @@ class CreateBookings < ActiveRecord::Migration
 
       t.timestamps
     end
+    
+    add_index :bookings, :booking_time, :unique => true
   end
 
   def self.down

@@ -491,3 +491,12 @@ header {
 table.booking_table td {
 	border: 1px solid white;
 }
+
+table.booking_table p {
+	margin-bottom: 5px;
+}
+
+p.smalltext {
+	font-size: 10px;
+	margin-top: 5px;
+}

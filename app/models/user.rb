@@ -11,6 +11,24 @@ class User < ActiveRecord::Base
   default_scope :order => 'users.email ASC'
   
   has_many :bookings
+  
+  def already_booked?
+    if admin?
+      return false
+    else
+      if !bookings.empty?
+        bookings.each do |b|
+          if b.booking_time >= Date.today && b.booking_time <= (Date.today + 6.days)
+            return true
+          end
+        end
+      else
+        return false
+      end
+      return false
+    end
+  end
+  
 end
 
 

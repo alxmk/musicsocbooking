@@ -9,7 +9,12 @@ Musicsocbooking::Application.routes.draw do
     end
   end
   
-  resources :bookings, :only => [:create, :destroy, :index]
+  resources :bookings, :only => [:index] do
+    member do
+      put 'make'
+      put 'remove'
+    end
+  end
 
   root :to => 'pages#home'
   

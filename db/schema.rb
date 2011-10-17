@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(:version => 20111017104633) do
     t.datetime "updated_at"
   end
 
+  add_index "bookings", ["booking_time"], :name => "index_bookings_on_booking_time", :unique => true
+
   create_table "users", :force => true do |t|
     t.string   "email",                              :default => "",    :null => false
     t.string   "encrypted_password",  :limit => 128, :default => "",    :null => false

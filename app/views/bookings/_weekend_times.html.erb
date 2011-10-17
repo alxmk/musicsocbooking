@@ -8,12 +8,19 @@
 		</p>
 		<% booking = Booking.find_by_booking_time(slottime) %>
 		<% if booking %>
-			<p><%= "Booked by #{booking.user.email}." %></p>
+			<p class="smalltext">
+				<%= "Booked by:" %>
+				<br />
+				<%= "#{booking.user.email}" %>
+			</p>
 			<% if booking.user == current_user %>
-				<%= link_to "Unbook this slot", "#" %>
+				<%= link_to "Unbook this slot", remove_booking_path(booking.id), 
+					:method => :put, :confirm => "Are you sure?",
+					:title => "Remove this booking?" %>
 			<% end %>
 		<% else %>
-			<%= link_to "Book this slot", "#" %>
+			<%= link_to "Book this slot", make_booking_path(0, :booking_time => slottime),
+			 	:method => :put %>
 		<% end %>
 	</td>
 <% end %>
