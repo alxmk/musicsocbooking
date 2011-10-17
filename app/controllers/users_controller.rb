@@ -8,6 +8,24 @@ class UsersController < ApplicationController
     @users = User.all
   end
   
+  def confirm
+    @user = User.find(params[:id])
+    if !@user.confirmed?
+      @user.toggle!(:confirmed)
+    end
+    flash[:success] = "User #{@user.email} confirmed!"
+    redirect_to users_path
+  end
+  
+  def unconfirm
+    @user = User.find(params[:id])
+    if @user.confirmed?
+      @user.toggle!(:confirmed)
+    end
+    flash[:success] = "User #{@user.email} unconfirmed!"
+    redirect_to users_path
+  end
+  
   private
   
   def check_admin

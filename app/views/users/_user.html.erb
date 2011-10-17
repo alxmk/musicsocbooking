@@ -10,9 +10,9 @@
 	</td>
 	<td class="options">
 		<% if user.confirmed? %>
-			<%= link_to "Unconfirm User", "#" %>
+			<%= link_to "Unconfirm User", unconfirm_user_path(user.id), :method => :put %>
 		<% else %>
-			<%= link_to "Confirm User", "#" %>
+			<%= link_to "Confirm User", confirm_user_path(user.id), :method => :put %>
 		<% end %>
 	</td>
 </tr>
