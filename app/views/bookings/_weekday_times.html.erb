@@ -1,0 +1,19 @@
+<% starttime = Time.parse("#{thisday.year}-#{thisday.month}-#{thisday.day} 09:30:00")%>
+<% [0, 3, 6, 9, 12].each do |t| %>
+	<td>
+		<% slottime = starttime + t.hours %>
+		<p>
+			<%= slottime.strftime("%H:%M") + " - " + 
+			(slottime + 2.hours).strftime("%H:%M")%>
+		</p>
+		<% booking = Booking.find_by_booking_time(slottime) %>
+		<% if booking %>
+			<p><%= "Booked by #{booking.user.email}." %></p>
+			<% if booking.user == current_user %>
+				<%= link_to "Unbook this slot", "#" %>
+			<% end %>
+		<% else %>
+			<%= link_to "Book this slot", "#" %>
+		<% end %>
+	</td>
+<% end %>

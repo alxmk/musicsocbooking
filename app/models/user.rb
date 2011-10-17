@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   
   default_scope :order => 'users.email ASC'
+  
+  has_many :bookings
 end
 
 

@@ -487,3 +487,7 @@ textfield{
 header {
 	text-align: center;
 }
+
+table.booking_table td {
+	border: 1px solid white;
+}

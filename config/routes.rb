@@ -8,6 +8,8 @@ Musicsocbooking::Application.routes.draw do
       put 'unconfirm'
     end
   end
+  
+  resources :bookings, :only => [:create, :destroy, :index]
 
   root :to => 'pages#home'
   
