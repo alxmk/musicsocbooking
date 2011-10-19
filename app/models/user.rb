@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
     else
       if !bookings.empty?
         bookings.each do |b|
-          if b.booking_time >= Date.today && b.booking_time <= (Date.today + 6.days)
+          if b.booking_time >= Date.today
             return true
           end
         end
