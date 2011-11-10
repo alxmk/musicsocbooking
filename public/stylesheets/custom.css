@@ -500,3 +500,12 @@ p.smalltext {
 	font-size: 10px;
 	margin-top: 5px;
 }
+
+p.question {
+	font-weight: bold;
+	font-style: italic;
+}
+
+div.map {
+	text-align: center;
+}
