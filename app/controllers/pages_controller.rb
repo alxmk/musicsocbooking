@@ -1,8 +1,5 @@
 class PagesController < ApplicationController
   
-  before_filter :authenticate_user!,  :only => :faq
-  before_filter :check_confirmed,     :only => :faq
-  
   def home
     @title = "Home"
   end
