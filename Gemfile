@@ -40,7 +40,7 @@ group :assets do
   gem 'uglifier'  
 end  
   
-gem 'jquery-rails'
+# gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails', '2.5.0'
