@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'devise'
 
+gem 'pg'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
