@@ -2,8 +2,8 @@
 <html>
 	<head>
 	  	<title><%= title %></title>
-	  	<%= render 'layouts/stylesheets' %>
-	  	<%= javascript_include_tag :defaults %>
+	  	<%= stylesheet_link_tag "application" %>
+	  	<%= javascript_include_tag "application" %>
 		<%= render 'layouts/metadata' %>
 		<%= render 'layouts/analytics' %>
 	  	<%= csrf_meta_tag %>
