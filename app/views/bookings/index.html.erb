@@ -1,16 +1,22 @@
-<h1>Bookings</h1>
-<table class="booking_table">
-	<% [0, 1, 2, 3, 4, 5, 6].each do |n| %>
-		<% thisday = @date + n.days %>
-		<tr>
-			<td class="date">
-				<%= thisday.strftime("%a %d/%m") %>
-			</td>
-			<% if thisday.wday == 0 || thisday.wday == 6 %>
-				<%= render 'weekend_times', :thisday => thisday %>
-			<% else %>
-				<%= render 'weekday_times', :thisday => thisday %>
+<div class="row">
+	<div class="span3">
+		<h1>Bookings</h1>
+	</div>
+	<div class="span9">
+		<table class="booking_table">
+			<% [0, 1, 2, 3, 4, 5, 6].each do |n| %>
+				<% thisday = @date + n.days %>
+				<tr>
+					<td class="date">
+						<%= thisday.strftime("%a %d/%m") %>
+					</td>
+					<% if thisday.wday == 0 || thisday.wday == 6 %>
+						<%= render 'weekend_times', :thisday => thisday %>
+					<% else %>
+						<%= render 'weekday_times', :thisday => thisday %>
+					<% end %>
+				</tr>
 			<% end %>
-		</tr>
-	<% end %>
-</table>
+		</table>
+	</div>
+</div>

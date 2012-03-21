@@ -1,6 +1,6 @@
 /* Overall */
 
-textarea{
+/*textarea{
 	resize: none;
 }
 
@@ -37,12 +37,12 @@ body {
 
 /* Header */
 
-header{
+/*header{
 	margin-top: 25px;
 	/*border: 1px solid yellow;*/
 }
 
-header td.quote{
+/*header td.quote{
 	width: 30%;
 	text-align: left;
 }
@@ -59,7 +59,7 @@ header td.search{
 
 /* Nav Menu */
 
-nav {
+/*nav {
 	padding-top: 15px;
 	padding-left:0;
 	padding-right:0;
@@ -130,7 +130,7 @@ nav ul li.lastlink a{
 }
 
 /* Profile */
-table td.sidebar{
+/*table td.sidebar{
 	width: 200px;
 	vertical-align: center;
 	
@@ -258,7 +258,7 @@ table td.name{
 
 /* Sign in form*/
 
-.signin {
+/*.signin {
 	margin-left: 20%;
 	width: 500px;
 }
@@ -275,14 +275,14 @@ table td.name{
 }
 
 /* Smooth corners */
-.round {
+/*.round {
 	-moz-border-radius:		10px;
 	-webkit-border-radius:	10px;
 	border-radius:			10px;
 }
 
 /* Error messages */
-.field_with_errors {
+/*.field_with_errors {
   padding: 5px 5px 5px 5px	;
   background-color: red;
   display: table;
@@ -369,7 +369,7 @@ td.avatar img{
 }
 
 /* Notification Bar */
-.notification_bar {
+/*.notification_bar {
 	background: lightGoldenRodYellow;
 	border: 1px solid black;
 	color: black;

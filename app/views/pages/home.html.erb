@@ -1,22 +1,35 @@
-<h1>Welcome!</h1>
-<p>
-	This is the online booking system for the University of Bath's music society
-	(MusicSoc) band practice room.
-</p>
-<p>
-	Please log in if you already have a membership, if not then:
-</p>
-<ul>
-	<li>
-		<%= link_to "Join MusicSoc", 
-			"http://www.bathstudent.com/socs/societies/musicsoc/" %>
-		on BathStudent if you haven't already
-	</li>
-	<li>
-		<%= link_to "Sign up", new_user_registration_path %> here using your BUCS email
-	</li>
-	<li>
-		Email the MusicSoc committee to get your account validated (see the 
-		"Join MusicSoc" link if you don't have the address)
-	</li>
-</ul>
+<div class="row">
+	<div class="span6 image_holder">
+		<%= image_tag("audience.jpg", :alt => "Audience Pic", :class => "size_image round") %>
+	</div>
+	<div class="span6 image_holder">
+		<%= image_tag("major7th.jpg", :alt => "Major Seventh", :class => "size_image round") %>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		</br>
+		<h1>Welcome!</h1><br/>
+		<p>
+			This is the online booking system for the University of Bath's music society
+			(MusicSoc) band practice room.
+		</p>
+		<p>
+			Please log in if you already have a membership, if not then:
+		</p>
+		<ul>
+			<li>
+				<%= link_to "Join MusicSoc", 
+					"http://www.bathstudent.com/socs/societies/musicsoc/" %>
+				on BathStudent if you haven't already
+			</li>
+			<li>
+				<%= link_to "Sign up", new_user_registration_path %> here using your BUCS email
+			</li>
+			<li>
+				Email the MusicSoc committee to get your account validated (see the 
+				"Join MusicSoc" link if you don't have the address)
+			</li>
+		</ul>
+	</div>
+</div>
