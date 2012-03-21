@@ -41,6 +41,8 @@ group :assets do
 end  
   
 gem 'jquery-rails'
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
 
 group :development do
   gem 'rspec-rails', '2.5.0'
