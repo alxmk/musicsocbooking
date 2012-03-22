@@ -14,13 +14,18 @@
 				<%= "#{booking.user.email}" %>
 			</p>
 			<% if booking.user == current_user %>
-				<%= link_to "Unbook this slot", remove_booking_path(booking.id), 
-					:method => :put, :confirm => "Are you sure?",
-					:title => "Remove this booking?" %>
+				<div class="btn-group">
+					<%= link_to "Unbook this slot", remove_booking_path(booking.id), 
+						:method => :put, :confirm => "Are you sure?",
+						:title => "Remove this booking?", :class => "btn btn-danger" %>
+				</div>
 			<% end %>
 		<% else %>
-			<%= link_to "Book this slot", make_booking_path(0, :booking_time => slottime),
-			 	:method => :put %>
+			<div class="btn-group">
+				<%= link_to "Book this slot", make_booking_path(0, 
+					:booking_time => slottime), :method => :put,
+					:class => "btn btn-success" %>
+			</div>
 		<% end %>
 	</td>
 <% end %>
