@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BathStudent.com | MusicSoc</title>
+  <style type="text/css">
+    body { 
+		background-color: #000; 
+		color: #666; 
+		text-align: center; 
+		font-family: arial, sans-serif;
+	}
+    div.dialog {
+      width: 25em;
+      padding: 0 4em;
+      margin: 4em auto 0 auto;
+      border: 1px solid #ccc;
+      border-right-color: #999;
+      border-bottom-color: #999;
+    }
+	#headlogo {
+		width: 1000px;
+	}
+	.icon {
+		width: 100px;
+		border: 1px solid #fff;
+		padding: 10px;
+		height: 100px;
+	}
+	.iconcontainer {
+		margin: 2.5px;
+		overflow: hidden;
+		display: inline;
+	}
+	.iconlink {
+		text-decoration: none;
+	}
+	.round {
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+		border-radius:			10px;
+	}
+    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+	ul.polaroids { width: 700px; margin: 50px auto; padding: 0; }
+	ul.polaroids li { display: inline; }
+	ul.polaroids a { background: #fff; display: inline; float: left; margin: 0 15px 20px 15px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none; color: #333; font-size: 18px; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(0deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(0deg); }
+	
+	ul.polaroids img { display: block; width: 300px; margin-bottom: 12px; height: 300px; overflow: hidden; }
+	ul.polaroids a:after { content: attr(title); }
+
+	ul.polaroids li:nth-child(even) a { -webkit-transform: rotate(2deg);  -moz-transform: rotate(2deg); }
+	ul.polaroids li:nth-child(3n) a { -webkit-transform: none; position: relative; top: -5px;  -moz-transform: none; }
+	ul.polaroids li:nth-child(5n) a { -webkit-transform: rotate(5deg); position: relative; right: 5px;  -moz-transform: rotate(5deg); }
+	ul.polaroids li:nth-child(8n) a { position: relative; right: 5px; top: 8px; }
+	ul.polaroids li:nth-child(11n) a { position: relative; left: -5px; top: 3px; }
+
+	ul.polaroids li.messy a { margin-top: -375px; margin-left: 160px; -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); }
+
+	ul.polaroids li a:hover { -webkit-transform: scale(1.25); -moz-transform: scale(1.25); -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5); position: relative; z-index: 5; }
+	
+	#menu {
+		
+	}
+  </style>
+</head>
+
+<body>
+	<img src="logo2.png" id="headlogo"><br />
+	<div class="icondivcontainer">
+		<a href="http://www.facebook.com/groups/130934812093/" 
+			class="iconlink" title="Facebook Group">
+			<div class="iconcontainer">
+				<img src="facebook_icon.png" 
+					id="facebook" class="icon round" alt="Facebook Group">
+			</div>
+		</a>
+		<a href="mailto:socs-musicsoc@lists.bath.ac.uk" class="iconlink" title="Email Us">
+			<div class="iconcontainer">
+				<img src="email_icon.png" id="email" class="icon round" alt="Email Us">
+			</div>
+		</a>
+		<a href="http://musicsoc.heroku.com" class="iconlink" title="Our Website">
+			<div class="iconcontainer">
+				<img src="web_icon.png" id="web" class="icon round" alt="Our Website">
+			</div>
+		</a>
+		<a href="http://people.bath.ac.uk/su9music/thebeats" 
+			class="iconlink" title="The Beats Webzine">
+			<div class="iconcontainer">
+				<img src="book_icon.png" 
+					id="book" class="icon round" alt="The Beats Webzine">
+			</div>
+		</a>
+		<a href="#" class="iconlink" title="Join Us">
+			<div class="iconcontainer">
+				<img src="join_icon.png"
+					id="join" class="icon round" alt="Join Us">
+			</div>
+		</a>
+	</div>
+	<div id="menu">
+		<ul class="polaroids">
+			<a href="#" title="Live Music">
+				<img src="livemusic.jpg" alt="Live Music">
+			</a>
+			<a href ="#" title="Practice Room">
+				<img src="practiceroom.jpg" alt="Practice Room">
+			</a>
+			<a href="#" title="Socialising">
+				<img src="socialising.jpg" alt="Socialising">
+			</a>
+			<a href="#" title="Editing & Recording">
+				<img src="editingrecording.jpg" alt="Editing & Recording">
+			</a>
+			<a href="#" title="Meet the Committee">
+				<img src="committee.jpg" alt="Meet the Committee">
+			</a>
+			<a href="#" title="The Beats Webzine">
+				<img src="thebeats.ico" alt="The Beats Webzine">
+			</a>
+		</ul>
+	</div>
+</body>
+</html>
